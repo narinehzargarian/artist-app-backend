@@ -2,5 +2,5 @@ runtime: nodejs22
 service: default
 
 env_variables:
-  MONGO_URI: "mongodb+srv://nzargari:simplepassword135@cluster0.buwfk.mongodb.net/HW3?retryWrites=true&w=majority&appName=Cluster0"
-  JWT_SECRET: "74f8cda0b6dcb7c556cc5e7e4ce941fcfa9b8f6c5c2f3082234e384afd997e50"
+  MONGO_URI: "${MONGO_URI}"
+  JWT_SECRET: "${JWT_SECRET}"
