@@ -4,5 +4,9 @@ node_modules/
 # Env files
 .env
 
+#GCP files
+.gcloudignore
+app.yaml
+
 # macOS
 .DS_Store
