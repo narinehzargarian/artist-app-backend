@@ -52,5 +52,23 @@ PORT=8080
 - `GET /api/auth/status` - Get current user login status (using cookies)
 - `DELETE /api/users/me` - Delete user account
 
+### Artist Search & Details
+- `GET /api/search?name={name}` - Search artists by name
+- `GET /api/artist?id={artist_id}` - Get artist info
+- `GET /api/similar_artists?artist_id={artist_id}` - Similar artists to `artist_id`
+- `GET /api/artworks?artist_id` - Artworks of `artist_id`
+- `GET /api/genes?artwork_id` - Categories of Artwork `artwork_id`
 
+### Favorites (Authenticated)
+- `GET api/favorites/get` - List of the current user's favorites
+- `POST api/favorites/add` - Add artist to favorites
+- `POST api/favorites/remove` - Remove artist from favorites
+
+# Database
+- Uses MongoDB Atlas
+- Collections:
+  - `users`: stores {fullname, email, passwordHash, profileImageUrl, favorites : [{artistID, dateAdded}]}
+ 
+# Gravatar Integration
+Profile images are generated using Gravatar by hashing user's email (SHA-256) and building the URL.
 
