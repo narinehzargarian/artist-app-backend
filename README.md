@@ -50,7 +50,7 @@ PORT=8080
 - `POST /api/users` – Register a new user
 - `POST /api/auth/logout` - Logout user
 - `GET /api/auth/status` - Get current user login status (using cookies)
-- `POST /api/users/me` - Delete user account
+- `DELETE /api/users/me` - Delete user account
 
 
 
