@@ -48,7 +48,9 @@ PORT=8080
 ### Authentication
 - `POST /api/auth/login` – Login user
 - `POST /api/users` – Register a new user
-- `POST /api/auth/logout` – Logout user
-– `GET /api/auth/status` – Get current user login status (using cookies)
-– `POST /api/users/me` – Delete user account
+- `POST /api/auth/logout` - Logout user
+- `GET /api/auth/status` - Get current user login status (using cookies)
+- `POST /api/users/me` - Delete user account
+
+
 
