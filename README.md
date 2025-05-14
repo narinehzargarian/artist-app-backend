@@ -55,12 +55,12 @@ PORT=8080
 ### Artist Search & Details
 - `GET /api/search?name={name}` - Search artists by name
 - `GET /api/artist?id={artist_id}` - Get artist info
-- `GET /api/similar_artists?artist_id={artist_id}` - Similar artists to `artist_id`
-- `GET /api/artworks?artist_id` - Artworks of `artist_id`
-- `GET /api/genes?artwork_id` - Categories of Artwork `artwork_id`
+- `GET /api/similar_artists?artist_id={artist_id}` - Get similar artists
+- `GET /api/artworks?artist_id={artist_id}` - Get artworks of artist
+- `GET /api/genes?artwork_id={artwork_id}` - Get categories of artwork
 
 ### Favorites (Authenticated)
-- `GET api/favorites/get` - List of the current user's favorites
+- `GET api/favorites/get` - List current user's favorites
 - `POST api/favorites/add` - Add artist to favorites
 - `POST api/favorites/remove` - Remove artist from favorites
 
